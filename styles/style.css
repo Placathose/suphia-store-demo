@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+/*-------------------------------- Mixin -----------------------------------*/
+/*-------------------------------- GENERAL -----------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+.h1 {
+  font-size: 52px;
+  line-height: 120%;
+  color: #624346;
+}
+
+.h2 {
+  font-size: 48px;
+  line-height: 120%;
+  color: #624346;
+}
+
+p, a {
+  font-family: 'Gordita';
+}
+
+li a {
+  text-decoration: none;
+}
+
+button.btn-full {
+  background: #624346;
+  border-radius: 9px;
+  padding: 20px 50px;
+  border: none;
+  font-family: Gordita;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+button.btn-clear {
+  background-color: #F9E5DB;
+  border-radius: 9px;
+  border-color: #624346;
+  padding: 20px 50px;
+  font-family: Gordita;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #624346;
+  cursor: pointer;
+}
+
+/*----------------- Large devices (laptops/desktops, 992px and up) --------------------------*/
+@media only screen and (min-width: 992px) {
+  /*-----HERO (positioning and z-index ----*/
+  header.hero {
+    position: relative;
+    height: 100vh;
+  }
+  .hero-background {
+    background-color: #E6D0C5;
+    height: 100vh;
+    width: 60%;
+    position: absolute;
+    z-index: 1;
+  }
+  .positioning {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+  }
+  nav.hero-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 14px 62px 0 62px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav.hero-top ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav.hero-top ul li {
+    list-style-type: none;
+    padding-right: 35px;
+  }
+  nav.hero-top ul li a {
+    color: #624346;
+  }
+  .hero-lower {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 56px 140px 0 140px;
+  }
+  .hero-lower .hero-content {
+    max-width: 660px;
+    margin: 110px 60px 0 0;
+  }
+  .hero-lower .hero-content h1 {
+    margin-bottom: 43px;
+  }
+  .hero-lower .hero-content p {
+    margin-bottom: 40px;
+    max-width: 500px;
+  }
+  .hero-lower img {
+    max-width: 500px;
+  }
+  /*-----Client's testimonials ----*/
+  section.testimonials .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 50px;
+  }
+  section.testimonials .testimonial-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 72px 320px 60px;
+  }
+  section.testimonials .testimonial-wrap div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  section.testimonials .testimonial-wrap div p {
+    max-width: 197px;
+    font-size: 12px;
+    line-height: 160%;
+    margin: 15px 0;
+  }
+  section.testimonials .testimonial-wrap div h4 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  section.testimonials .testimonial-wrap div img {
+    width: 70%;
+  }
+  .products .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 50px;
+    margin-bottom: 92px;
+  }
+  .products .product-items {
+    background-color: #F9E5DB;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .products .product-items .product-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .products .product-items .product-item img {
+    max-width: 450px;
+  }
+  .products .product-items .product-item .description-wrapper {
+    width: 450px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .products .product-items .product-item .description-wrapper .product-description {
+    max-width: 327px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .products .product-items .product-item .description-wrapper .product-description h2 {
+    font-size: 32px;
+    color: #624346;
+    margin-bottom: 36px;
+  }
+  .products .product-items .product-item .description-wrapper .product-description p {
+    color: #624346;
+    margin-bottom: 63px;
+  }
+  /*-----About Suphia ----*/
+  .about {
+    background-color: #F9E5DB;
+    height: 90vh;
+    margin-top: 148px;
+    /*-----I made sure the "center-content" is centered on any screen ----*/
+  }
+  .about .center-content {
+    width: 1200px;
+    margin: 0 auto;
+    /*I gave it a width and set margin as such*/
+    height: 60vh;
+    position: relative;
+  }
+  .about .center-content img {
+    position: absolute;
+    z-index: 1;
+    top: 61px;
+    left: 40px;
+  }
+  .about .about-wrapper {
+    background-color: white;
+    max-width: 600px;
+    position: absolute;
+    z-index: 5;
+    top: 93px;
+    left: 500px;
+  }
+  .about .about-wrapper .about-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .about .about-wrapper .about-content h2 {
+    margin-top: 13px;
+    margin-bottom: 76px;
+  }
+  .about .about-wrapper .about-content p {
+    color: #624346;
+    padding: 0 40px;
+  }
+  .about .about-wrapper .about-content button {
+    margin-top: 90px;
+    margin-bottom: 50px;
+  }
+  /*-----Where to find us ----*/
+  .location {
+    height: 80vh;
+  }
+  .location .location-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .location .location-wrapper .location-content {
+    margin: 23px 190px 0;
+  }
+  .location .location-wrapper h4 {
+    font-family: Gordita;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 60px;
+  }
+  .location .location-wrapper span {
+    font-family: Gordita;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+  }
+  .location .location-wrapper ul {
+    margin-top: 25px;
+  }
+  .location .location-wrapper ul > li {
+    font-family: Gordita;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 174.5%;
+  }
+  .location h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+  /*----- Footer ----*/
+  footer {
+    background-color: #624346;
+    color: white;
+  }
+  footer .upper-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  footer .upper-footer li {
+    list-style-type: none;
+  }
+  footer .upper-footer .column ul > li {
+    margin-bottom: 20px;
+  }
+  footer .upper-footer span {
+    font-family: 'Gordita';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 160%;
+  }
+  footer .upper-footer ul {
+    margin-top: 50px;
+  }
+  footer .upper-footer ul > li a {
+    color: white;
+    font-size: 12px;
+  }
+  footer .upper-footer .column1 ul > li a {
+    color: white;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 120%;
+  }
+  footer .line1 {
+    height: 1px;
+    background-color: white;
+    margin: 90px 28px 0;
+  }
+  footer .lower-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  footer .lower-footer .socials a {
+    margin-left: 15px;
+  }
+  footer .lower-footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 47px 0 0;
+  }
+  footer .lower-footer {
+    padding-bottom: 70px;
+  }
+  footer .lower-footer div > p {
+    margin: 36px 0 0;
+    font-size: 12px;
+    float: right;
+  }
+}
+/*# sourceMappingURL=style.css.map */
